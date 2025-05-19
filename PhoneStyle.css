@@ -1,0 +1,82 @@
+/*@media only screen and (max-width: 630px) {
+    body{height: 100%;}
+    .timer-container{  
+        height: 450px;
+        width: 300px;
+        border-radius: 1%;
+        top: 20%;
+        left: 8.1%;
+       }
+       .timer-container #timernumb{
+        font-size: 120px;
+        align-items: center;
+        top: 20%;
+    }
+    .soundbtn-cont{
+        top: 20.5%;
+        left: 62.5%;
+        width: 15%;
+        height: 44px;
+    }
+    .settingbtn-cont{
+        width: 15%;
+        height: 44px;
+        top: 10.7%;
+        left: 80%;
+    }
+    .refreshbtn-cont{
+        width: 15%;
+        height: 44px;
+        top: 0%;
+        left: 1%;
+    }
+    .timer-container #timer-starter{
+        width: 110px;
+        height: 48px;
+        top: 52.8%;
+        left: 19.7%;
+        font-size: 20px;
+    }
+    .setting-cont {
+          left: 3.8%;
+          top: 3.8%;
+          width: 93%;
+          height: 93%;
+    }
+    .setting-cont #close{
+        right: 6%;
+    }
+    #StateCheckTxt{
+        left: 25%;
+    }
+    #ContinCheck{
+        left: -19.1%;
+    }
+    #ContinCheckTxt{
+        left: 26%;
+     }
+     #Fewminsnd{
+        left: 23%;
+    }
+    #FewminsndtxtOne{
+       left: 11.5%;
+    }
+    #FewminsndtxtTwo{
+        left: 35%;
+        top: 39.8%;
+    }
+    #CheckNotification{
+        left: -38.1%;
+    }
+    #CheckNotificationTxt{
+        left: 26%;
+    }
+    .ThemeChanger{
+        width: 55px;
+        height: 55px;
+    }
+    .sound_player-cont {
+        left: 22.66%;
+        top: -6%;
+    }
+  }

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Study Corner</title>
+        <link rel="icon" href="Images/FoccuslyLogo.png" type="image/icon type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DotGothic16&family=Jersey+15&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+
+        <link rel="stylesheet" href="BackgroundStyle.css">
+        <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet" href="SettingStyle.css">
+        <link rel="stylesheet" href="SoundPlayer.css">
+        <link rel="stylesheet" href="PhoneStyle.css">
+    </head>
+    <body>
+  <!--*************************Background*************************-->
+  <div class="Background CloudBackground" id = "Cloud_bg"></div>
+  <div class="Background PurpleBackround" id = "Purple_bg"></div>
+  <div class="Background SplashBackground" id = "Splash_bg"></div>
+  <div class="Background DarkcloudBackground" id = "Darkcloud_bg"></div>
+  <div class="Background CozyshopBackground" id = "CozyShop_bg"></div>
+  <div class="Background CityBackground" id = "City_bg"></div>
+  <div class="Background CityroadBackground" id="CityRoad_bg"></div>
+  <div class="Background TrolleystopBackground" id="TrolleyStop_bg"></div>
+  <div class="Background WindowcityBackground" id="WindowCity_bg"></div> 
+  <div class="Background PurplehouseBackground" id="PurpleHouse_bg"></div>
+  <div class="Background CozyBookBackground" id = "CozyBook_bg"></div>
+  <div class="Background CozyRoomBackground" id = "CozyRoom_bg"></div>
+  <div class="Background CozyBookRoomBackground" id = "CozyBookRoom_bg"></div>
+  <div class="Background OldLibraryBackground" id="OldLibrary_bg"></div>
+  <div class="Background GhibliHouseBackground" id="GhibliHouse_bg"></div>
+  <div class="Background GhibliCastleBackground" id="GhibliCastle_bg"></div>
+  <div class="Background GhibliPaintBackground" id="GhibliPaint_bg"></div>
+  <div class="Background GhibliSeaBackground" id="GhibliSea_bg"></div>
+
+
+  <!--*************************Song Player*************************-->
+  <audio src="" id = "audio"></audio>
+  <audio id = "rain_sfx"><source src="Songs/RainSnd.mp3"></audio>
+  <audio id = "wind_sfx" src="Songs/WindSnd.mp3"></audio>
+  <audio id = "wave_sfx" src="Songs/CitySnd.mp3"></audio><!--Orman Sesiyle değiştirildi-->
+  <audio id=  "street_sfx" src = "Songs/CitySnd.mp3"></audio>
+  <audio id= "campfire_sfx" src="Songs/CitySnd.mp3"></audio><!--!!!Bu ve alttakilere geçiçi sesler eklendi!!-->
+  <audio id= "fest_sfx" src="Songs/CitySnd.mp3"></audio><!---->
+  <audio id= "caffe_sfx" src="Songs/CitySnd.mp3"></audio><!---->
+  <audio id= "library_sfx" src="Songs/CitySnd.mp3"></audio><!---->
+  <audio id= "war_sfx" src="Songs/CitySnd.mp3"></audio><!---->
+
+        <div class="Player-Cont" id="Player-Cont">
+
+          <!--
+          <div class="music-player" id="music-cont">
+            <h1 class="music-name">song one</h1>
+            <p class="artist-name">artist</p>   
+            <div class="song-image"></div>
+            <div class="song-slider">
+                <input type="range" value = 0 class="seek-bar">
+                <span class="current-time">00:00</span>
+                <span class="song-duration">00:00</span>
+            </div>
+            <div class="contols">
+                <button class="btn backward-btn"><span></span><!--<img src="Images/pre.png" alt=""></button>
+                <button class="play-btn pause">
+                    <span></span>
+                    <span></span>
+                </button>
+                <button class="btn forward-btn"><span></span><!--<img src="Images/nxt.png" alt=""></button>
+                <span class="material-symbols-outlined" id = "Repeat-Button">repeat <span id = "RepeatNum"></span></span>
+            </div>
+          </div>-->
+
+
+          <div class="sound_player-cont" id = "sound-cont">
+
+          <div class="rainsfx-cont">
+            <h1 id="Raintxt">Rain</h1>
+            <span class="material-symbols-outlined" id = "rainvol">volume_up</span>
+            <span class="material-symbols-outlined" id = "downrainvol">volume_down</span>
+            <span class="material-symbols-outlined" id = "mutedrainvol">volume_off</span>
+            <input type ="range" id = "rainrng" min="0" max="1" step="0.01" value="0" >
+          </div>
+
+          <div class="windsfx-cont">
+             <h1 id = "Windtxt">Wind</h1>
+             <span class="material-symbols-outlined" id = "windvol">volume_up</span>
+             <span class="material-symbols-outlined" id = "downwindvol">volume_down</span>
+             <span class="material-symbols-outlined" id = "mutedwindvol">volume_off</span>
+             <input type ="range" id = "windrng" min="0" max="1" step="0.01" value="0" >
+          </div>
+
+          <div class="wavesfx-cont"> <!--Dalga yerine orman sesi eklendi-->
+            <h1 id = "Wavetxt">Forest</h1>
+            <span class="material-symbols-outlined" id = "wavevol">volume_up</span>
+            <span class="material-symbols-outlined" id = "downwavevol">volume_down</span>
+            <span class="material-symbols-outlined" id = "mutedwavevol">volume_off</span>
+            <input type ="range" id = "waverng" min="0" max="1" step="0.01" value="0" >
+         </div>
+
+         <div class="campfirefx-cont">
+          <h1 id = "campfiretxt">Camp Fire</h1>
+          <span class="material-symbols-outlined" id = "campfirevol">volume_up</span>
+          <span class="material-symbols-outlined" id = "downcampfirevol">volume_down</span>
+          <span class="material-symbols-outlined" id = "mutedcampfirevol">volume_off</span>
+          <input type ="range" id = "campfirerng" min="0" max="1" step="0.01" value="0" >
+         </div>
+
+         <div class="streetsfx-cont">
+          <h1 id = "Streettxt">City</h1>
+          <span class="material-symbols-outlined" id = "streetvol">volume_up</span>
+          <span class="material-symbols-outlined" id = "downstreetvol">volume_down</span>
+          <span class="material-symbols-outlined" id = "mutedstreetvol">volume_off</span>
+          <input type ="range" id = "streetrng" min="0" max="1" step="0.01" value="0" >
+         </div>
+
+         <div class="festsfx-cont">
+          <h1 id = "festtxt">Fest</h1>
+          <span class="material-symbols-outlined" id = "festvol">volume_up</span>
+          <span class="material-symbols-outlined" id = "downfestvol">volume_down</span>
+          <span class="material-symbols-outlined" id = "mutedfestvol">volume_off</span>
+          <input type ="range" id = "festrng" min="0" max="1" step="0.01" value="0" >
+         </div>
+
+         <div class="caffe-cont">
+          <h1 id = "caffetxt">Cafe</h1>
+          <span class="material-symbols-outlined" id = "caffevol">volume_up</span>
+          <span class="material-symbols-outlined" id = "downcaffevol">volume_down</span>
+          <span class="material-symbols-outlined" id = "mutedcaffevol">volume_off</span>
+          <input type ="range" id = "cafferng" min="0" max="1" step="0.01" value="0" >
+         </div>
+
+         <div class="library-cont">
+          <h1 id = "librarytxt">Library</h1>
+          <span class="material-symbols-outlined" id = "libraryvol">volume_up</span>
+          <span class="material-symbols-outlined" id = "downlibraryvol">volume_down</span>
+          <span class="material-symbols-outlined" id = "mutedlibraryvol">volume_off</span>
+          <input type ="range" id = "libraryrng" min="0" max="1" step="0.01" value="0" >
+         </div>
+
+         <div class="war-cont">
+          <h1 id = "wartxt">War</h1>
+          <span class="material-symbols-outlined" id = "warvol">volume_up</span>
+          <span class="material-symbols-outlined" id = "downwarvol">volume_down</span>
+          <span class="material-symbols-outlined" id = "mutedwarvol">volume_off</span>
+          <input type ="range" id = "warrng" min="0" max="1" step="0.01" value="0" >
+         </div>
+      
+         </div>
+
+
+        </div>
+        
+
+  <!--*************************Timer*************************-->
+  <audio src="Songs/Sfxs/TimerFinish.mp3" id = "Finishsfx"></audio>
+  <div class="timer-container">
+    <h1 id="timernumb">00:00</h1>
+    <button id="timer-starter" class="StartBtn">Start</button>
+    <div class="soundbtn-cont" id="SoundBtnCont"><span class="material-symbols-outlined" id="Soundbtn">music_note</span></div>
+    <div class="settingbtn-cont" id="SettingBtnCont"><span class="material-symbols-outlined" id = "Setttingbtn">settings</span></div>
+    <div class="refreshbtn-cont"><span class="material-symbols-outlined" id = "Refreshbtn">refresh</span></div>
+  </div>
+  <!--*************************Settings*************************-->
+  <div class="setting-cont" id = "setting">
+
+    <span class="material-symbols-outlined" id = "close">close</span>
+    <div class="input-row">
+      <div class="input-container">
+        <label for="PomodoroTime" id="TimerInpLabel">Study</label>
+        <input type="number" class="TimeAdjust" id="PomodoroTime" min="25" value="25">
+      </div>
+      <div class="input-container">
+        <label for="BreakTime" id="BreakInpLabel">Break</label>
+        <input type="number" class="TimeAdjust" id="BreakTime" value="5">
+      </div>
+    </div>
+    <div class="input-row">
+      <div class="dropdown-container">
+        <label for="fontSelector" class="dropdown-label">Choose Font</label>
+        <select id="fontSelector" class="dropdown">
+          <option value='Signika Negative' id="Fontoption_one">Signika Negative</option>
+          <option value='Lato' id="Fontoption_two">Lato</option>
+          <option value='Bebas Neue' id="Fontoption_three">Bebas Neue</option>
+        </select>
+      </div>
+      <div class="fontsize-container">
+        <label for="fontsizeInp" id="FontSizeLabel">Font Size</label>
+        <div class="FontSize">
+          <input type="number" id="fontsizeInp" value="140" min="140" max="200" onkeydown="return false">
+        </div>
+      </div>
+    </div>
+
+    <div class="checks_cont">
+      <input type="checkbox" id = "StateCheck" title="Set whether the counter will be a stopwatch or a timer"><label for="StateCheck" class="" title="Set whether the counter will be a stopwatch or a timer">Timer Mode</label>
+      <input type="checkbox" id = "ContinCheck" title="Automatic break when counter resets"><label for="ContinCheck" class=""  title="Automatic break when counter resets">Auto Switch: Study/Break</label>
+      <input type="checkbox" id = "SoundCheck"><label for="CheckNotification" class="">Play Sound on End</label>
+      <input type="checkbox" id = "CheckNotification"><label for="CheckNotification" class="">Send Notification on End</label>
+      <input type="checkbox" id = "TimerVisualCheck" title="Choose whether the display will be in Hours or Minutes"><label for="" class="" title="Choose whether the display will be in Hours or Minutes">Display Format</label>
+      <label for="Fewminsnd" class="FewLabel">Ring every</label><input type="number" id = "Fewminsnd" value="0"><label for="Fewminsnd" class="FewLabel" id="SecondFewTxt">minutes</label>
+    </div>
+
+    <div class="ThemeChanger-Container">
+      <div class="ThemeChanger" id  = "BGImage_one"></div>
+      <div class="ThemeChanger" id  = "BGImage_two"></div>
+      <div class="ThemeChanger" id  = "BGImage_three"></div>
+      <div class="ThemeChanger" id  = "BGImage_four"></div>
+    </div>
+
+  </div>
+    <i class="arrow right" id="ThemeArrowRight"></i>
+    <i class="arrow left" id="ThemeArrowLeft"></i>  
+
+    <!--Full screen icon-->
+    <span class="material-symbols-outlined screen_button" id = "Enter_FullScreenIcon" title="Shortcut: f">
+      fullscreen
+    </span>
+    <!--Visibility icon-->
+    <span class="material-symbols-outlined screen_button" id = "VisibilityIcon" title="Shortcut: v">
+      visibility_off
+    </span>
+
+
+    <div id="bmc-container">
+      <button id="close-bmc-btn">×</button>
+      <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" 
+      data-slug="studycorner" data-color="#1c1c1c" data-emoji=""  data-font="Cookie" data-text="Buy me a coffe" data-outline-color="#ffffff"
+      data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
+    </div>
+
+
+
+
+
+
+    
+    <script src="Countdown.js" async defer></script>
+    <script src="Menus.js" async defer></script>
+    <script src="SongData.js" async defer></script>
+    <script src="Main.js" async defer></script>
+    </body>
+</html>

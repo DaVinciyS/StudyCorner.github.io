@@ -1,0 +1,332 @@
+.setting-cont{
+    position: absolute;
+    display: none;
+    width: 470px;
+    height: 470px;
+    border-radius: 25px;
+    background-color: rgba(65, 16, 108, 0.85);
+    box-shadow: 0px 0px 40px rgba(138, 0, 193, 0.534);
+    box-shadow: inset 0 0 20px rgba(44, 0, 61, 0.534);        
+    padding: 30px;
+    overflow: hidden;
+    color: #daa9bd;
+    text-align: center;/**/
+}
+
+.setting-cont #close{
+    position: absolute;
+    color: aliceblue;
+    right: 3.2%;
+    top: 3.6%;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+/**/
+.setting-cont label {
+    margin-bottom: 5px; /* Input ile label arasında boşluk bırakır */
+    font-size: 16px; /* Label yazı boyutu */
+    color: aliceblue; 
+}
+
+.setting-cont .TimeAdjust {
+    outline: none;
+    border: 2px solid beige;
+    border-radius: 5px;
+    background-color: #480051;
+    color: aliceblue;
+    width: 45px;
+    font-size: 20px;
+    padding: 0px 2px;
+    display: block;
+}
+
+.setting-cont .TimeAdjust::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+}/*
+#BreakTime{
+    margin-top: -48.5px;
+    margin-left: 70px;
+}
+
+#TimerInpLabel{
+    margin-left: -362.3px;
+}
+#BreakInpLabel{
+    margin-left: -226px;
+    margin-top: -52px;
+}*/
+.input-row {
+    display: flex; /* Yan yana hizalama sağlar */
+    gap: 20px; /* Inputların arasında boşluk bırakır */
+    justify-content: flex-start; /* Sola hizalanır, isteğe bağlı olarak center kullanılabilir */
+    align-items: flex-start; /* Dikey hizalamayı başlatır */
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column; /* Label'in input'un üstünde kalmasını sağlar */
+    align-items: flex-start;
+  }
+  
+  .input-container label {
+    margin-bottom: 5px; /* Input ile label arasında boşluk bırakır */
+    font-size: 16px;
+    color: aliceblue;
+  }
+  
+  .input-container input {
+    outline: none;
+    border: 2px solid beige;
+    border-radius: 5px;
+    background-color: #480051;
+    color: aliceblue;
+    width: 60px; /* Genişlik */
+    font-size: 20px;
+    padding: 5px;
+  }
+/***/
+/***Dropdown container style***/
+.dropdown-container {
+    display: flex;
+    flex-direction: column; /* Label üstte, dropdown altta */
+    align-items: flex-start;
+    margin-top: 20px; /* Üstteki inputlardan boşluk bırakır */
+  }
+  
+  .dropdown-label {
+    margin-bottom: 5px; /* Dropdown ile label arasında boşluk bırakır */
+    font-size: 16px;
+    color: aliceblue;
+  }
+  
+  /* Dropdown style */
+  .dropdown {
+    outline: none;
+    border: 2px solid beige;
+    border-radius: 5px;
+    background-color: #480051;
+    color: aliceblue;
+    font-size: 16px;
+    padding: 5px;
+    width: 109.3px;
+    cursor: pointer;
+  }  
+
+  #fontSelector #Fontoption_one{
+    font-family: "Signika Negative", sans-serif;
+  }
+  #fontSelector #Fontoption_two{
+    font-family: "Lato", sans-serif;
+  }
+  #fontSelector #Fontoption_three{
+    font-family: "Bebas Neue", sans-serif;
+  }
+  #fontSelector #Fontoption_four{
+    font-family: "DotGothic16", sans-serif;
+  }
+
+
+  .dropdown-container,
+  .fontsize-container {
+    display: flex;
+    flex-direction: column; /* Label üstte, input altta */
+    align-items: left;
+  }
+  
+  .fontsize-container {
+    margin-left: 20px; /* Dropdown ile arasında boşluk bırak */
+  }
+  
+  .input-row {
+    display: flex; /* Yan yana hizalama */
+    justify-content: flex-start; /* Soldan hizala */
+    align-items: center; /* Dikeyde ortala */
+  }
+
+#fontsizeInp {
+    border: 2px solid beige;
+    border-radius: 5px;
+    background-color: #480051;
+    color: aliceblue;
+    width: 60px; /* Genişlik */
+    font-size: 16px;
+    padding: 5.5px;
+    outline: none;
+    /*text-align: center; /* Sayı ortalanır */
+    transform: translate(-50%, 28%);
+}
+#fontsizeInp::-webkit-inner-spin-button {
+  opacity: 1;
+  width: 48px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 33px;
+  background-color: lightblue; /* Arka plan rengi */
+  border-radius: 4px;          /* Kenarları yuvarlama */
+}
+#fontsizeInp::-webkit-outer-spin-button {
+  background-color: lightblue;
+  border-radius: 4px;
+}
+#FontSizeLabel{
+  transform: translate(-50%, 50%);
+}
+/****Settings with check inputs****/
+.checks_cont{
+    display:block;
+    width: 0%;
+    margin-top: 20px;
+}
+.checks_cont label{
+    color: #fff;
+    position: absolute;
+    margin-top: -25.5px;
+    margin-left: 47px;
+}
+
+input[type = "checkbox"]{   
+    position: relative;
+    width: 40px;
+    height: 20px;
+    -webkit-appearance: none;
+    /*background: rgb(237, 0, 237);*/
+    background: rgb(126, 10, 147);
+    outline: none;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+    transition: .5;
+    cursor: pointer;
+}
+input:checked[type = "checkbox"]{
+    background: rgb(102, 2, 120);
+    /*background: rgb(20, 20, 20);/*İkinci tema*/
+}
+input[type = "checkbox"]::before{
+    content: '';
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    /*background: rgb(255, 160, 255);*/
+    background: aliceblue;/***İkinci tema***/
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    transition: 0.15s;
+}
+input:checked[type = "checkbox"]:before{
+    left: 20px;
+}
+
+
+#Fewminsnd{
+    position: absolute;
+    outline: none;
+    border: 2px solid #fff;  
+    border-radius: 5px; 
+    background-color: #480051;
+    color: aliceblue;
+    width: 30px;
+    height: 20px;
+    font-size: 18px;
+    padding: 0px 2px;
+    left: 108px;
+}
+.setting-cont #Fewminsnd::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.FewLabel{
+    top: 328px;
+    left: -14px;
+}
+#SecondFewTxt{
+    top: 328px;
+    left: 95px;
+}
+
+
+
+
+
+/*Background Change Container*/
+
+.ThemeChanger-Container{
+    position: absolute;
+    display: inline-block;
+    width: 376.075px;
+    height: 100px;
+    transform: translate(-50%, 0);
+    bottom: 20px;
+}
+.ThemeChanger{
+    display: inline-block;
+    cursor: pointer;
+    width: 90px;
+    height: 90px;
+    background-color: rgb(240, 240, 240);
+    border: 3px solid rgba(117, 20, 130, 0.963);
+    border-radius: 20px;
+    box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.534);
+    box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.7);
+    padding: 3px 6px;
+}
+#BGImage_one{
+  background-image: url("Images/Backgrounds/SwingBg.jpg");
+  background-size: cover;
+  background-position: center;
+
+}
+#BGImage_two{
+    background-image: url("Images/Backgrounds/CozyShop.jpeg");
+    background-size: cover;
+    background-position: center;
+
+}
+#BGImage_three{
+    background-image: url("Images/Backgrounds/VillageBg.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+#BGImage_four{
+    background-image: url("Images/Backgrounds/SkyCloudy.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+/*
+#BGImage_four{
+    background-color: rgb(51, 13, 85);
+}
+*/
+
+/*Theme Change Arrows*/
+.arrow {
+    position: absolute;
+    text-align: center;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    display: none;
+    padding: 13px; 
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin: 0 auto;
+    margin-bottom: -320px;
+}
+  
+.right {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(-45deg);
+    position: absolute;
+    margin-right: -390px;
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    margin-left: -390px;
+  }

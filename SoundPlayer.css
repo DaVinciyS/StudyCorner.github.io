@@ -1,0 +1,195 @@
+/* Ana Player Container */
+.Player-Cont {
+    position: fixed;
+    display: none;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(30, 30, 30, 0.95);
+    background-color: rgba(61, 15, 102, 0.85);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    color: #fff;
+}
+
+/* Music Player Stili *//*
+.music-player {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgba(164, 13, 184, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    text-align: center;
+}
+
+.music-name, .artist-name {
+    text-transform: capitalize;
+    color: #fff;
+    text-align: center;
+}
+
+.music-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.artist-name {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.song-slider {
+    width: 100%;
+    position: relative;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.seek-bar {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+.seek-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.current-time, .song-duration {
+    font-size: 12px;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.song-duration {
+    position: absolute;
+    right: 0;
+}
+
+.controls {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.play-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.play-btn:hover {
+    transform: scale(1.1);
+}
+
+.play-btn span {
+    width: 8px;
+    height: 20px;
+    background: #a40db8;
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+.forward-btn, .backward-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.forward-btn:hover, .backward-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+#Repeat-Button {
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Sound Player Container */
+.sound_player-cont {
+    position: relative;
+    margin-top: 20px; /* Üst üste binmeyi önlemek için aralık */
+    padding: 10px;
+    background-color: rgba(44, 10, 74, 0.85);
+    border-radius: 10px;
+    z-index: 9; /* Üst üste binme sırasında öncelik */
+}
+
+.sound_player-cont h1 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.sound_player-cont span {
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.sound_player-cont input[type="range"] {
+    width: 100%;
+    height: 5px;
+    background-color: #44146b;
+    border-radius: 10px;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.sound_player-cont input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .Player-Cont {
+        width: 100%;
+        max-width: none;
+        border-radius: 0;
+        top: auto;
+        bottom: 0;
+        transform: translateY(0);
+    }
+
+    .music-player,
+    .sound_player-cont {
+        margin-bottom: 10px;
+    }
+}

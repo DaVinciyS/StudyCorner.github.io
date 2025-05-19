@@ -1,0 +1,112 @@
+.Background{
+  position:absolute;
+  display: none;
+  margin: 0;
+  padding: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+.Background.CloudBackground{
+  background-image: linear-gradient(rgba(0,0,0, 0.15), rgba(0,0,0,0.12)), url('Images/Backgrounds/SwingBg.jpg');
+}
+.Background.PurpleBackround{
+    background-color: rgb(181, 84, 84);
+}
+.Background.SplashBackground{
+    background-image: linear-gradient(rgba(0,0,0, 0.15), rgba(0,0,0,0.15)), url('Images/Backgrounds/VillageBg.jpg');
+}
+.Background.DarkcloudBackground{
+  background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('Images/Backgrounds/SkyCloudy.jpg');
+}
+.Background.CityBackground{
+  background-image: linear-gradient(rgba(0,0,0, 0.25), rgba(0,0,0,0.25)), url('Images/Backgrounds/City.jpg');
+}
+.Background.CozyshopBackground{
+  background-image: linear-gradient(rgba(0,0,0, 0.15), rgba(0,0,0,0.15)), url('Images/Backgrounds/CozyShop.jpeg');
+}
+.Background.CityroadBackground{
+  background-image: linear-gradient(rgba(0,0,0, 0.15), rgba(0,0,0,0.15)), url('Images/Backgrounds/CityRoad.jpg');
+}
+.Background.TrolleystopBackground{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0,0,0,0.33)), url('Images/Backgrounds/TrolleyStop.jpg');
+}
+.Background.WindowcityBackground{
+  background-image: linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0,0.1)), url('Images/Backgrounds/WindowCity.jpg');
+}
+.Background.CozyBookBackground{
+  background-image: linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0,0.1)), url('Images/Backgrounds/Cozybookbg.png');
+}
+.Background.CozyRoomBackground{
+  background-image: linear-gradient(rgba(0,0,0, 0.12), rgba(0,0,0,0.12)), url('Images/Backgrounds/Cozyroombg.jpg');
+}
+.Background.CozyBookRoomBackground{
+  background-image: linear-gradient(rgba(0,0,0, 0.0), rgba(0,0,0,0.0)), url('Images/Backgrounds/cozybookroombg.jpg');
+}
+.Background.OldLibraryBackground{
+  background-image: linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0,0.1)), url('Images/Backgrounds/oldlibrarybg.jpg');
+}
+.Background.GhibliHouseBackground{
+  background-image: linear-gradient(rgba(0,0,0, 0.13), rgba(0,0,0,0.13)), url('Images/Backgrounds/Ghibli_House.png');}
+.Background.GhibliCastleBackground{
+  background-image: linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0,0.1)), url('Images/Backgrounds/Ghibli_Castle.jpg');}
+.Background.GhibliPaintBackground{
+  background-image: linear-gradient(rgba(0,0,0, 0.1), rgba(0,0,0,0.1)), url('Images/Backgrounds/Ghibli_Paint.jpg');}
+.Background.GhibliSeaBackground{
+  background-image: linear-gradient(rgba(0,0,0, 0.0), rgba(0,0,0,0.0)), url('Images/Backgrounds/Ghibli_Sea.jpg');}
+
+
+
+
+
+@media only screen and (max-width: 1920px) {
+  .CloudBackground {
+    width: 100%;
+  }
+  .PurpleBackround {
+    width: 100%;
+  }
+  .SplashBackground {
+    width: 100%;
+  }
+  .DarkcloudBackground {
+    width: 100%;
+    height: 100%;
+  }
+  .CozyshopBackground{
+    width: 100%;
+    height: 100vh;
+  }
+  .OldLibraryBackground{
+    width: 100%;
+    height: 100vh;
+  }
+
+
+
+}
+@media only screen and (max-width: 620px){
+  .CloudBackground {
+    width: 100%;
+    height: 100vh;   
+  }
+  .PurpleBackround {
+    width: 100%;
+    height: 100vh;
+  }
+  .SplashBackground {
+    width: 100%;
+    height: 100vh;
+  }
+  .DarkcloudBackground {
+    width: 100%;
+    height: 100vh;
+  }
+  .CozyshopBackground{
+    width: 100%;
+    height: 100vh;
+  }
+}
